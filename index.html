@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hacker Terminal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Matrix Background -->
+  <canvas id="matrix"></canvas>
+
+  <!-- Login UI -->
+  <div id="loginBox">
+    <h1>Hacker Login</h1>
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="login()">Access</button>
+    <p>New User? Register</p>
+  </div>
+
+  <!-- Terminal -->
+  <div id="terminalContainer" class="hidden">
+    <div id="terminal"></div>
+
+    <div id="input-line">
+      <span>> </span>
+      <input type="text" id="commandInput" autofocus />
+    </div>
+  </div>
+
+  <!-- Sound -->
+  <audio id="typingSound" src="https://www.soundjay.com/mechanical/keyboard-1.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
